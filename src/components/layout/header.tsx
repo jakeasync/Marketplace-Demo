@@ -1,8 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
-import { useState, useEffect } from "react";
 import {
   Bell,
   Mail,
@@ -11,17 +9,9 @@ import {
 } from "lucide-react";
 
 export function Header({ onToggleMenu }: { onToggleMenu?: () => void }) {
-  const router = useRouter();
-  const searchParams = useSearchParams();
-  const [query, setQuery] = useState(searchParams.get("q") || "");
-
-  useEffect(() => {
-    setQuery(searchParams.get("q") || "");
-  }, [searchParams]);
-
   return (
     <header className="sticky top-0 z-40 flex h-14 w-full items-center justify-between border-b border-[#E4E6EB] bg-white px-4 sm:px-6">
-      {/* Left: Round Blue 'F' Icon + Marketplace title + Mobile Hamburger */}
+      {/* Left: Marketplace title + Mobile Hamburger */}
       <div className="flex items-center gap-3">
         {onToggleMenu && (
           <button
@@ -40,7 +30,7 @@ export function Header({ onToggleMenu }: { onToggleMenu?: () => void }) {
         </Link>
       </div>
 
-      {/* Right icons: Facebook-style circular #F4F4F4 buttons */}
+      {/* Right icons: circular #F4F4F4 buttons */}
       <div className="flex items-center gap-2 sm:gap-2.5">
         <button
           className="flex h-10 w-10 items-center justify-center rounded-full bg-[#F4F4F4] hover:bg-[#E4E6EB] text-[#050505] transition-colors"
