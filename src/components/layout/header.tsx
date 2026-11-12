@@ -34,10 +34,7 @@ export function Header({ onToggleMenu }: { onToggleMenu?: () => void }) {
         )}
 
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#1877F2] text-white font-bold text-xl shadow-xs">
-            F
-          </div>
-          <span className="font-bold text-xl text-[#050505] tracking-tight">
+          <span className="font-bold text-2xl text-[#050505] tracking-tight">
             Marketplace
           </span>
         </Link>

@@ -41,7 +41,7 @@ export default function CreateListingPage() {
           Choose listing type
         </h1>
         <p className="text-sm text-gray-500 mt-1">
-          Select what kind of item you want to post to Facebook Marketplace.
+          Select what kind of item you want to post to Marketplace.
         </p>
       </div>
 
