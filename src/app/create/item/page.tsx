@@ -20,13 +20,25 @@ import { Select } from "@/components/ui/select";
 import { formatPrice } from "@/lib/utils";
 
 const CATEGORY_OPTIONS = [
-  "Electronics",
-  "Furniture",
   "Vehicles",
+  "Property Rentals",
   "Apparel",
-  "Bicycles",
   "Classifieds",
+  "Electronics",
+  "Entertainment",
+  "Family",
   "Free Stuff",
+  "Garden & Outdoor",
+  "Hobbies",
+  "Home Goods",
+  "Home Improvement Supplies",
+  "Home Sales",
+  "Musical Instruments",
+  "Office Supplies",
+  "Pet Supplies",
+  "Sporting Goods",
+  "Toys & Games",
+  "Buy and sell groups",
 ];
 
 function CreateItemForm() {
